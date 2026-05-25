@@ -1,0 +1,101 @@
+aid: 1x-robotics
+name: 1X Technologies
+description: >-
+  1X Technologies (formerly Halodi Robotics) is a Norwegian-American humanoid
+  robotics company building general-purpose bipedal robots designed to live
+  and work alongside people. Founded in 2014 in Norway by Bernt Øyvind
+  Børnich, the company is now headquartered in Palo Alto, California with
+  R&D and manufacturing presence in Moss, Norway and a new vertically
+  integrated NEO factory in Hayward, California. 1X is backed by the OpenAI
+  Startup Fund, EQT Ventures, Tiger Global, Samsung NEXT, and others
+  through Series A2 ($23.5M, 2023), Series B ($100M, 2024), and a $1B
+  raise reported in 2025. Its commercial robots are EVE — a wheeled
+  upper-humanoid deployed in industrial and security settings since 2022 —
+  and NEO, a bipedal home humanoid that began pre-orders October 28, 2025
+  at $20,000 (or $499/month) with consumer deliveries in 2026. 1X also
+  acquired Kind Humanoid (Jan 2025) and announced a partnership to deploy
+  up to 10,000 NEO robots into EQT portfolio company factories and
+  warehouses between 2026 and 2030. Unlike most humanoid robotics
+  vendors, 1X publishes meaningful open-source artifacts: the EVE ROS2
+  API (custom WholeBodyTrajectory and DrivingCommand message types) and
+  the halodi-messages package on GitHub under Apache-2.0, plus the
+  1X World Model Challenge with 100+ hours of vector-quantized EVE
+  observations and GENIE baseline models released on Hugging Face. There
+  is no public REST/HTTP developer API or hosted developer portal — the
+  developer surface is ROS2 messages, robot models in URDF, and the
+  world-model dataset/model artifacts.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Robotics
+  - Humanoid Robots
+  - General-Purpose Robots
+  - Bipedal Robots
+  - Embodied AI
+  - World Models
+  - Foundation Models
+  - ROS2
+  - EVE
+  - NEO
+  - Home Robotics
+  - Manufacturing
+  - Warehouse Automation
+  - Hardware
+  - Norway
+url: https://raw.githubusercontent.com/api-evangelist/1x-robotics/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis: []
+common:
+  - type: Website
+    url: https://www.1x.tech
+  - type: NEO
+    url: https://www.1x.tech/neo
+  - type: About
+    url: https://www.1x.tech/about
+  - type: Discover
+    url: https://www.1x.tech/discover
+  - type: Press
+    url: https://www.1x.tech/press
+  - type: InvestorRelations
+    url: https://www.1x.tech/investor-relations
+  - type: Careers
+    url: https://www.1x.tech/careers
+  - type: Support
+    url: https://www.1x.tech/support
+  - type: GetUpdates
+    url: https://www.1x.tech/get-updates
+  - type: GitHubOrg
+    url: https://github.com/1x-technologies
+  - type: WorldModelChallenge
+    url: https://github.com/1x-technologies/1xgpt
+  - type: WorldModelDataset
+    url: https://huggingface.co/datasets/1x-technologies/worldmodel
+  - type: EveRos2Examples
+    url: https://github.com/1x-technologies/eve-ros2-examples
+  - type: HalodiMessages
+    url: https://github.com/1x-technologies/halodi-messages
+  - type: RobotModels
+    url: https://github.com/1x-technologies/halodi-robot-models
+  - type: Contact
+    url: mailto:contact@1x.tech
+  - type: ChallengeContact
+    url: mailto:challenge@1x.tech
+  - type: Twitter
+    url: https://twitter.com/1x_tech
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/1x-tech
+  - type: YouTube
+    url: https://www.youtube.com/@1x_tech
+  - type: Instagram
+    url: https://www.instagram.com/1x_tech
+  - type: TikTok
+    url: https://www.tiktok.com/@1x_tech
+  - type: Wikipedia
+    url: https://en.wikipedia.org/wiki/1X_Technologies
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
