@@ -1,0 +1,14 @@
+{
+  "repo": "1x-robotics",
+  "feeds": [
+    {
+      "source": "https://www.1x.tech",
+      "feed_url": "https://www.1x.tech/discover",
+      "title": "1X Technologies Discover / News",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-05T00:00:00Z"
+}

@@ -1,0 +1,163 @@
+vocabulary:
+  name: 1X Robotics Vocabulary
+  description: >
+    Key concepts, interfaces, and domain terms for 1X Technologies (formerly
+    Halodi Robotics), covering their humanoid robot platform, ROS2 API surface,
+    world-model AI artifacts, and deployment domains.
+  version: "1.0.0"
+  terms:
+
+    - term: EVE
+      definition: >
+        1X's commercially deployed wheeled upper-humanoid robot. EVE operates
+        on a wheeled mobile base with a full humanoid upper body and arms,
+        deployed primarily in industrial inspection, security, and logistics
+        settings since 2022.
+      tags:
+        - robot
+        - hardware
+        - wheeled
+        - commercial
+
+    - term: NEO
+      definition: >
+        1X's fully bipedal home humanoid robot. NEO features two legs and two
+        arms enabling stair-climbing and home-environment navigation. Pre-orders
+        opened October 2025 at $20,000 / $499 per month; consumer deliveries
+        planned for 2026.
+      tags:
+        - robot
+        - hardware
+        - bipedal
+        - home
+        - consumer
+
+    - term: WholeBodyTrajectory
+      definition: >
+        A custom ROS2 message type defined in the halodi-messages package that
+        encodes a full-body joint trajectory for the EVE robot, specifying
+        desired positions, velocities, and accelerations across all actuated
+        degrees of freedom over a time horizon.
+      tags:
+        - ROS2
+        - message-type
+        - control
+        - trajectory
+
+    - term: DrivingCommand
+      definition: >
+        A custom ROS2 message type in the halodi-messages package used to
+        command EVE's wheeled base with linear and angular velocity setpoints,
+        analogous to a geometry_msgs/Twist but tailored to EVE's drive
+        kinematics.
+      tags:
+        - ROS2
+        - message-type
+        - mobility
+        - control
+
+    - term: halodi-messages
+      definition: >
+        An Apache-2.0 open-source ROS2 package published on GitHub under the
+        1x-technologies organisation that defines all custom message and service
+        types used to interface with the EVE robot, including WholeBodyTrajectory,
+        DrivingCommand, and ancillary feedback message definitions.
+      tags:
+        - ROS2
+        - open-source
+        - package
+        - interface
+
+    - term: ROS2
+      definition: >
+        Robot Operating System 2 — the middleware and communication framework
+        used by 1X for all programmatic interfaces to EVE. ROS2 topics, services,
+        and actions over DDS form the primary developer surface in place of a
+        REST/HTTP API.
+      tags:
+        - middleware
+        - robotics
+        - communication
+        - open-source
+
+    - term: URDF
+      definition: >
+        Unified Robot Description Format — XML-based file format describing a
+        robot's kinematic and dynamic properties. 1X publishes URDF models for
+        EVE and NEO in the halodi-robot-models GitHub repository under an
+        open-source licence, enabling simulation and motion planning.
+      tags:
+        - robot-description
+        - simulation
+        - kinematics
+        - open-source
+
+    - term: World Model
+      definition: >
+        A learned generative model of robot observations and actions trained on
+        EVE operational data. 1X released the 1X World Model Challenge dataset
+        containing 100+ hours of vector-quantised EVE observations on Hugging
+        Face, along with GENIE baseline models.
+      tags:
+        - AI
+        - foundation-model
+        - dataset
+        - embodied-AI
+
+    - term: Embodied AI
+      definition: >
+        Artificial intelligence systems instantiated in a physical body (robot)
+        that perceive and act in the real world. 1X's research direction centres
+        on training foundation models directly from robot embodiment data rather
+        than purely simulated or web-scraped data.
+      tags:
+        - AI
+        - research
+        - foundation-model
+        - robotics
+
+    - term: Humanoid Robot
+      definition: >
+        A robot with a body form inspired by or approximating the human shape,
+        typically including a torso, two arms, and (for fully bipedal variants)
+        two legs. 1X produces two humanoid form factors: EVE (wheeled lower body)
+        and NEO (bipedal).
+      tags:
+        - hardware
+        - form-factor
+        - robotics
+        - general-purpose
+
+    - term: Wheeled Mobility
+      definition: >
+        A locomotion modality where the robot moves via driven wheels rather
+        than legs. EVE uses a wheeled base that provides high speed, stability,
+        and energy efficiency in flat industrial and commercial environments.
+      tags:
+        - mobility
+        - locomotion
+        - EVE
+        - industrial
+
+    - term: Bipedal Locomotion
+      definition: >
+        Movement achieved through two legs, enabling navigation over stairs,
+        thresholds, and unstructured terrain typical in home environments.
+        NEO uses bipedal locomotion as its primary mobility mode.
+      tags:
+        - mobility
+        - locomotion
+        - NEO
+        - home
+
+    - term: Warehouse Automation
+      definition: >
+        The application of robotic systems to pick, pack, transport, and manage
+        goods within warehouse and distribution-centre environments. 1X has
+        announced deployment of up to 10,000 NEO robots into EQT portfolio
+        company factories and warehouses between 2026 and 2030.
+      tags:
+        - deployment
+        - logistics
+        - industrial
+        - use-case

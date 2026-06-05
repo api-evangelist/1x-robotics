@@ -1,0 +1,112 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "ros": "http://www.ros.org/wiki/",
+    "robot": "https://www.1x.tech/vocab/",
+
+    "1XTechnologies": {
+      "@id": "schema:Organization",
+      "@type": "@id"
+    },
+    "name": "schema:name",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "description": "schema:description",
+    "foundingDate": "schema:foundingDate",
+    "foundingLocation": "schema:foundingLocation",
+    "headquarters": "schema:location",
+    "industry": "schema:industry",
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id"
+    },
+
+    "Robot": {
+      "@id": "schema:Product",
+      "@type": "@id"
+    },
+    "robotModel": {
+      "@id": "robot:model",
+      "@type": "@id"
+    },
+    "locomotionType": "robot:locomotionType",
+    "payload": "robot:payload",
+    "deploymentDomain": "robot:deploymentDomain",
+
+    "EVE": {
+      "@id": "robot:EVE",
+      "@type": "@id",
+      "locomotionType": {"@value": "wheeled"},
+      "deploymentDomain": {"@value": "industrial, security"}
+    },
+    "NEO": {
+      "@id": "robot:NEO",
+      "@type": "@id",
+      "locomotionType": {"@value": "bipedal"},
+      "deploymentDomain": {"@value": "home, warehouse"}
+    },
+
+    "ROS2Interface": {
+      "@id": "ros:ROS2",
+      "@type": "@id"
+    },
+    "messageType": "ros:messageType",
+    "topicName": "ros:topicName",
+    "messagePackage": "ros:package",
+
+    "WholeBodyTrajectory": {
+      "@id": "robot:WholeBodyTrajectory",
+      "@type": "@id"
+    },
+    "DrivingCommand": {
+      "@id": "robot:DrivingCommand",
+      "@type": "@id"
+    },
+    "halodiMessages": {
+      "@id": "robot:halodiMessages",
+      "@type": "@id"
+    },
+
+    "WorldModel": {
+      "@id": "robot:WorldModel",
+      "@type": "@id"
+    },
+    "worldModelDataset": {
+      "@id": "robot:worldModelDataset",
+      "@type": "@id"
+    },
+    "observationHours": "robot:observationHours",
+    "vectorQuantized": "robot:vectorQuantized",
+
+    "URDF": {
+      "@id": "robot:URDF",
+      "@type": "@id"
+    },
+    "robotDescription": "robot:robotDescription",
+
+    "GitHubOrg": {
+      "@id": "schema:codeRepository",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@type": "1XTechnologies",
+      "name": "1X Technologies",
+      "url": "https://www.1x.tech",
+      "description": "Norwegian-American humanoid robotics company building general-purpose bipedal robots designed to live and work alongside people.",
+      "foundingDate": "2014",
+      "foundingLocation": "Norway",
+      "headquarters": "Palo Alto, California",
+      "industry": "Humanoid Robotics, Embodied AI",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/1X_Technologies",
+        "https://github.com/1x-technologies",
+        "https://www.linkedin.com/company/1x-tech"
+      ]
+    }
+  ]
+}
